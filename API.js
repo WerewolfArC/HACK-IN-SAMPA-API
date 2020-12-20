@@ -9,9 +9,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => {
-    res.send({message: 'App is running on port 3000'});
-});
+//app.get('/', (req, res) => {
+//    res.send({message: 'App is running on port 3000'});
+//});
 
 app.use('/api/v1', require('./api/v1'));
 app.use(require('./controllers/AuthController'));
